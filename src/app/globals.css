@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f5f3f3;
+    --foreground: #0e0d0d;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: end;
+  height: 50px;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.links-parent{
+  background-color: #A29875;
+}
+
+
+.link{
+  padding-inline:  15px;
+}
+.hero-section{
+  background-color: #fffefe;
+}
+
+.container{
+  max-width: 1390px;
+  height: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-section .main{
+  display: flex;
+  height: 800px;
+  align-items: center;
+  justify-content: space-between ;
+}
+
+.hero-section .text-container{
+  width: 40%;
+}
+
+.hero-section .text-container .main-text{
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.hero-section .text-container .main-para{
+  font-size: 19px;
+  font-weight: 19;
+  color: #A29875;
+}
+
+.resume-btn{
+  background-color: #A29875;
+  padding: 10px;
+  border: none;
+  color: #FFF;
+  font-weight: 500;
+  line-height: 26px;
+}
